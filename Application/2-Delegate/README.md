@@ -1,12 +1,12 @@
 # Delegate
 
-Delegating a method to existing object is a commonly used task in Rubyland. Let's make it easier by defining a helper.
+Delegating a method to existing object is a commonly used technique in Rubyland. Let's make it easier by defining a helper.
 
 ## Interface
 
-Define the method under Module with the following signature `def delegate(*methods, to:)`.
+Define a method under `Module` with the following signature `def delegate(*methods, to:)`.
 
-Module `delegates` accepts one or more method names (symbols) and the name of the target object via the `:to` required keyword argument (also a symbol).
+Module `delegate` accepts one or more method names (symbols) and the name of the target object via the `:to` required keyword argument (also a symbol).
 
 ## Examples
 
@@ -14,7 +14,7 @@ Module `delegates` accepts one or more method names (symbols) and the name of th
 User = Struct.new(:first_name, :last_name)
 
 class Invoce
-  delegate :fist_name, :last_name to: '@user'
+  delegate :fist_name, :last_name, to: :'@user'
 
   def initialize(user)
     @user = user
