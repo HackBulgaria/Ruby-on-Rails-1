@@ -176,7 +176,7 @@ the playlist. Below there is an example of a yml file with two tracks:
  genre:  "heavy metal"
 ```
 
-## HashWithIndifferentAccess
+## HashWithIndifferentAccess (Bonus)
 
 Wait, but the YAML serializes the hash keys as strings?
 I cannot use my Track initializer ;(
