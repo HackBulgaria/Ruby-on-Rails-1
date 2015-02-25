@@ -20,10 +20,10 @@ Initial draft as of _February 25th, 2015_.
 
 Week | Material
 ---- | --------
-0    |   Intro to Rails. History and Perks. Intro to HTTP and Sinatra.
-1    |   HTTP Refresher. The Tricky Parts: Cookies, Sessions. Intro to SQL.
-2    |   SQL Refresher. Transactions, Primary Keys, Foreign Keys, Indexes. The Architecture of a Web app.
-3    |   Intro to Rails: Convention over Configuration, Overview of the Builtin Frameworks, Scaffolding. Basic Routing and Controller Rendering. Views, Layouts and Partials Structure.
+0    |   Intro to Rails. History and Perks. Ruby refresher.
+1    |   Intro to HTTP. The Tricky Parts: Cookies, Sessions. Intro to Sinatra.
+2    |   HTTP Refresher. Intro to SQL. Transactions, Primary Keys, Foreign Keys, Indexes. The Architecture of a Web app.
+3    |   SQL Refresher. Intro to Rails: Convention over Configuration, Overview of the Builtin Frameworks, Scaffolding. Basic Routing and Controller Rendering. Views, Layouts and Partials Structure.
 4    |   Controller Rendering and Redirection. Basic Authentication. Rendering forms. Mailers, Intro to ActiveJob. #perform_now vs #perform_later
 5    |   Intro to ActiveRecord. Intro to schema.rb and Migrations. Validations and Callbacks. How not to abuse the callbacks.
 6    |   Basic Query Interface. Intro to associations. Associations in depth. Many-to-many, `.through`, Automatic Reverses.
