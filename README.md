@@ -1,6 +1,6 @@
 # Ruby-on-Rails-1
 
-The first edition of the Ruby on Rails course in [HackBulgaria]. This is the
+The first edition of the Ruby on Rails course in [Hack Bulgaria]. This is the
 follow-up course after [Core Ruby].
 
 ```
