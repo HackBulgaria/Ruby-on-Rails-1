@@ -46,10 +46,6 @@ track = Track.new artist:"KAYTRANADA feat. Shay Lia",
 Playlist is an ordered collection of tracks. A neat functionality is that we
 can search tracks.
 
-I want you to test out an idea. Implement `Playlist#each`, that returns an
-enumerator if no block given. That way, we can get all the benefits of
-including Enumerable, without polluting the class with a ton of methods.
-
 ```ruby
 class Playlist
   def self.from_yaml(path)
@@ -124,13 +120,13 @@ playlist = Playlist.new(track1, track2, track3)
 # too:
 playlist = Playlist.new([track1, track2, track3])
 
-# I wanna choose only the jazzy house tracks.
-jazz_playlist & house_playlist
+# I wanna choose tracks that are both in the jazz and dance playlists.
+jazz_playlist & dance_playlist
 
-# I wanna exclude any house tracks from my playlist.
-jazz_playlist - house_playlist
+# I wanna exclude any dance tracks from my jazz playlist.
+jazz_playlist - dance_playlist
 
-# I wanna combine my soul and funk tracks.
+# I wanna combine all the tracks from my soul and funk playlists.
 soul_playlist | funk_playlist
 
 # I wanna be able to filter the tracks by a block.
@@ -156,11 +152,11 @@ end
 playlist.find_by awesome_rock_filter
 ```
 
-For the self.from_yaml(path) method check the Ruby YAML here:
- http://ruby-doc.org/stdlib-1.9.3/libdoc/yaml/rdoc/YAML.html
+For the self.from_yaml(path) method check the [Ruby YAML
+documentation](http://ruby-doc.org/stdlib-1.9.3/libdoc/yaml/rdoc/YAML.html).
 
-You need to create a .yml file with tracks and load them in 
-the playlist. Below there is an example of a yml file with two tracks:
+You need to create a `.yml` file with tracks and load them in the playlist.
+Below there is an example of a yml file with two tracks:
 
 ```yaml
 -
@@ -174,34 +170,6 @@ the playlist. Below there is an example of a yml file with two tracks:
  name:   "The numnber of the beast"
  album:  "The numnber of the beast"
  genre:  "heavy metal"
-```
-
-## HashWithIndifferentAccess (Bonus)
-
-Wait, but the YAML serializes the hash keys as strings?
-I cannot use my Track initializer ;(
-
-To overcome this, let's implement a special Hash. A
-hash in which `hash[:key]` and `hash["key"]` give us
-the same object.
-
-Then, let's monkey patch hash to be able to convert a
-regular hash to one with indifferent access.
-
-```ruby
-class HashWithIndifferentAccess < Hash
-  # Your code goes here.
-end
-
-class Hash
-  def with_indifferent_access
-    HashWithIndifferentAccess.new(self)
-  end
-end
-
-hash = {key1: 1, key2: 2}.with_indifferent_access
-hash[:key1] == hash["key1"]           #=> true
-hash.fetch(:key2) == hash.fetch("key2") #=> true
 ```
 
 [Hash#fetch]: http://ruby-doc.org/core-2.2.0/Hash.html#fetch
