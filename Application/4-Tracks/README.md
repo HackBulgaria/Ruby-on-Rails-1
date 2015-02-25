@@ -41,6 +41,8 @@ track = Track.new artist:"KAYTRANADA feat. Shay Lia",
                   genre: "Dance"
 ```
 
+_NOTE_: `Track#genre` is a plain Ruby `String`, even for multiple genres.
+
 ## Playlist
 
 Playlist is an ordered collection of tracks. A neat functionality is that we
