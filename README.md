@@ -25,7 +25,7 @@ Week | Material
 2    |   SQL Refresher. Transactions, Primary Keys, Foreign Keys, Indexes. The Architecture of a Web app.
 3    |   Intro to Rails: Convention over Configuration, Overview of the Builtin Frameworks, Scaffolding. Basic Routing and Controller Rendering. Views, Layouts and Partials Structure.
 4    |   Controller Rendering and Redirection. Basic Authentication. Rendering forms. Mailers, Intro to ActiveJob. #perform_now vs #perform_later
-5    |   Intro to ActiveRecord. Intro to schema.rb and Migrations. Validations and Callbacks. How not to abuse the callbacks>
+5    |   Intro to ActiveRecord. Intro to schema.rb and Migrations. Validations and Callbacks. How not to abuse the callbacks.
 6    |   Basic Query Interface. Intro to associations. Associations in depth. Many-to-many, `.through`, Automatic Reverses.
 7    |   Transactions, Single table inheritence. Has Secure Password. Musings on Small Models. Sandi Metz 5 Rules. Thoughts on OOP.
 8    |   Routes inside out. Introduction to engines. Middleware, Rack, Railties, Initializers and Configuration.
