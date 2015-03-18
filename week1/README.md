@@ -15,7 +15,7 @@ The easiest way to get [Ruby 2.2] on Windows is this [Ruby Installer][]. Don't
 forget to add the `C:\Ruby-221\bin` to the beginning of `%PATH%`.
 [Here][Windows Path] is how to do it.
 
-Alternatively, you can use [Rails Installer] and bundle a [Rails 4.2]
+Alternatively, you can use [Rails Installer][] and bundle a [Rails 4.2]
 application.
 
 ## Linux & OSX
@@ -30,7 +30,7 @@ gem install rails
 
 [Rails 4.2]: http://rubyonrails.org
 [Ruby 2.2]: https://www.ruby-lang.org
-[Ruby Intaller]: http://rubyinstaller.org
+[Ruby Installer]: http://rubyinstaller.org
 [Rails Installer]: http://railsinstaller.org
 [Windows Path]: http://www.computerhope.com/issues/ch000549.htm
 [rbenv installation page]: https://github.com/sstephenson/rbenv#installation
