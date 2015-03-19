@@ -4,12 +4,12 @@ Hello, and welcome to the first week of our humble little Ruby on Rails class.
 
 ![RUBYYYY](https://raw.github.com/HackBulgaria/Ruby-On-Rails-1/master/week1/.ruby.jpg)
 
-# Setup
+## Setup
 
 Installing [Ruby 2.2] or [Rails 4.2], isn't newbie friendly. Here are our tips
 on how to install it on your favourite OS.
 
-## Windows
+### Windows
 
 The easiest way to get [Ruby 2.2] on Windows is this [Ruby Installer][]. Don't
 forget to add the `C:\Ruby-221\bin` to the beginning of `%PATH%`.
@@ -18,7 +18,7 @@ forget to add the `C:\Ruby-221\bin` to the beginning of `%PATH%`.
 Alternatively, you can use [Rails Installer][] and bundle a [Rails 4.2]
 application.
 
-## Linux & OSX
+### Linux & OSX
 
 Follow the instructions on [rbenv installation page][]. After rbenv is
 installed, run the following in a fresh terminal session.
@@ -27,6 +27,11 @@ installed, run the following in a fresh terminal session.
 rbenv install 2.2.1 && rbenv global 2.2.1
 gem install rails
 ```
+
+## Problems
+
+- [Ruby Koans](https://github.com/HackBulgaria/Ruby-on-Rails-1/tree/master/week1/0-enlightenment)
+- [Sparse Matrix](https://github.com/HackBulgaria/Ruby-on-Rails-1/tree/master/week1/1-sparse-matrix)
 
 [Rails 4.2]: http://rubyonrails.org
 [Ruby 2.2]: https://www.ruby-lang.org
