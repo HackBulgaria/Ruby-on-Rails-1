@@ -16,8 +16,6 @@ follow-up course after [Core Ruby].
 
 ## Program
 
-Initial draft as of _February 25th, 2015_.
-
 Week | Material
 ---- | --------
 1    | Intro to Rails. History and Perks. Ruby refresher.
