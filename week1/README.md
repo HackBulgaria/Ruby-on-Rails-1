@@ -32,6 +32,9 @@ gem install rails
 
 - [Ruby Koans][]: If you think your Ruby is really rusty.
 - [Sparse Matrix][]: If you can accept the algorhitmic challenge.
+- [Enums][]: If you can meta hard.
+- [Active Support][]: If you wanna learn a bit of Rails right now. 
+
 
 [Rails 4.2]: http://rubyonrails.org
 [Ruby 2.2]: https://www.ruby-lang.org
@@ -41,3 +44,5 @@ gem install rails
 [rbenv installation page]: https://github.com/sstephenson/rbenv#installation
 [Ruby Koans]: https://github.com/HackBulgaria/Ruby-on-Rails-1/tree/master/week1/0-enlightenment
 [Sparse Matrix]: https://github.com/HackBulgaria/Ruby-on-Rails-1/tree/master/week1/1-sparse-matrix
+[Enums]: https://github.com/HackBulgaria/Ruby-on-Rails-1/tree/master/week1/2-enums
+[Active Support]: https://github.com/HackBulgaria/Ruby-on-Rails-1/tree/master/week1/3-active-support
