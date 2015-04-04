@@ -10,6 +10,8 @@ We would like to be able to:
 * list all photos by going to '/photos'
 * view a specific photo by visiting '/photos/:id'
 
+Layouts for viewing all posts and all photos should be different. Be creative!
+
 We would also like to be able to view both photos and posts when we go to our index page('/').
 
 :)
