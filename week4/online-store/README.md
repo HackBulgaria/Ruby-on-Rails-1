@@ -29,7 +29,8 @@ What you have to do is define the following endpoints:
 * `POST /products/new` - Creates a new product.
 * `PUT /products/{index}` - Updates product with {index}.
 * `DELETE /products/{index}` - Deletes product with {index}.
-* `GET /search/{type}/{slug}` - Searches for an entity of specified {type} with name that contains {slug}. E.g: GET /search/product/something
+* `GET /search/{type}/{slug}` - Returns entities of specified {type} with name that contains {slug}. E.g: GET /search/product/something
+* `GET /search/{type}/{property}/{slug}` - Returns entities of specified {type} with {property} that contains {slug}. E.g: GET /search/category/description/something
 
 To make things more interesting we'll require you to **NOT** use generators at all!
 
