@@ -1,8 +1,8 @@
 It's time again to create another web application.
 
-This time we'll be working on a online store. The application should provide only REST services in the form of JSON-formatted responses.
+This time we'll be working on an online store. The application should provide only REST services in the form of JSON-formatted responses. No pretty HTML this time.
 
-We have a couple of concepts in our store. First we have brands. Every brand goes with its name and a short description. We have categories. We have products. Each product has a name, a brand, a category, a price and a quantity of stock.
+We have a couple of concepts in our store that you should be aware of. First we have brands. Every brand goes with its name and a short description. It represents the producer of a product. We have categories. They have names only. Then we have products where each product has a name, a brand, a category, a price and a quantity of stock.
 
 What you have to do is define the following endpoints:
 * `GET /brands/count` - Returns count of the brands in the store.
@@ -29,5 +29,8 @@ What you have to do is define the following endpoints:
 * `POST /products/new` - Creates a new product.
 * `PUT /products/{index}` - Updates product with {index}.
 * `DELETE /products/{index}` - Deletes product with {index}.
+* `GET /search/{type}/{slug}` - Searches for an entity of specified {type} with name that contains {slug}. E.g: GET /search/product/something
 
 To make things more interesting we'll require you to **NOT** use generators at all!
+
+Start by using mock data for these entities and only do the "piping" by defining the required routes and actions. Next time we'll cover persistence and you will be able to actually store this data on disk.
