@@ -42,7 +42,7 @@ Here's the secret recipe for constructing such "tables". We take the data from o
 2. We take the first row of packages `[[0, 1]]` and try to fit it in the table. It fits nicely in the first position - `[[0, 1]]`. Sweet!
 3. We take the second row of packages `[[1, 2], [2, 5]]`. It doesn't fit in the first and second positions `cause the first one is already taken. Second and third however are empty, so we shove it there - `[[0, 1], [1, 2], [2, 5]]`.
 4. We take the third row of packages `[[0, 6], [3, 7]]` and try to fit it in the table. Since it's first element's index is 0 and it's second element's index is 3 we need to find two empty spots in the table that are 3 elements apart. First and fourth are no good since first is taken. Second and fifth are no good either since second is taken. Third is not free too. Fourth and seventh however seem fine. Let's put it there - `[[0, 1], [1, 2], [2, 5], [0, 6], nil, nil, [3, 7]]`. See how we left some positions empty? This is because we preserve the distance that the elements of a package are apart. This is key ingredient to making Tarjan tables work!
-5. The last row of packages is `[[1, 3], [3, 4]]`. Following the same steps we position them in sixth and seventh slots respectively.
+5. The last row of packages is `[[1, 3], [3, 4]]`. Following the same steps we position them in sixth and eighth slots respectively.
 
 This is how we end up with `[[0, 1], [1, 2], [2, 5], [0, 6], nil, [1, 3], [3, 7], [3, 4]]`. Now we need some code for telling the machine how to do this tedious computation so that we could enjoy our lifes in a more appropriate manner.
 
