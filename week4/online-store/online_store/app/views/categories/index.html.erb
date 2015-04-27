@@ -1,3 +1,20 @@
 <h1>Categories</h1>
+
+<table>
+  <tr>
+    <td>ID:</td>
+    <td>Name:</td>
+    <th colspan: 2></th>
+  </tr>
+  <% @categories.each do |category| %>
+    <tr>
+      <td><%= category.id %></td>
+      <td><%= category.name %></td>
+      <td><%= link_to 'Show', category_path(category) %></td>
+      <td><%= link_to 'Edit', edit_category_path(category) %></td>
+    </tr>
+  <% end %>
+</table>
+
 <%= link_to 'Back to home', root_path %>
 <%= link_to 'Create a new category', new_category_path %>

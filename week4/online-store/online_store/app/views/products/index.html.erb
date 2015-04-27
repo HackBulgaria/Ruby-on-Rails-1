@@ -1,3 +1,28 @@
 <h1>Products</h1>
+
+<table>
+  <tr>
+    <td>ID:</td>
+    <td>Name:</td>
+    <td>Brand:</td>
+    <td>Category:</td>
+    <td>Price:</td>
+    <td>Quantity:</td>
+    <th colspan: 2></th>
+  </tr>
+  <% @products.each do |product| %>
+    <tr>
+      <td><%= product.id %></td>
+      <td><%= product.name %></td>
+      <td><%= product.brand %></td>
+      <td><%= product.category %></td>
+      <td><%= product.price %></td>
+      <td><%= product.quantity %></td>
+      <td><%= link_to 'Show', product_path(product) %></td>
+      <td><%= link_to 'Edit', edit_product_path(product) %></td>
+    </tr>
+  <% end %>
+</table>
+
 <%= link_to 'Back to home', root_path %>
 <%= link_to 'Create a new product', new_product_path %>

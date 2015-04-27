@@ -1,0 +1,28 @@
+<%= form_for @brand do |b|%>
+
+  <% if @brand.errors.any? %>
+    <div id='error_explanation'>
+      <h2>
+        <%= pluralize(@brand.errors.count, 'error') %>
+        prohibited this brand from being saved. 
+      </h2>
+      <ul>
+        <%= @brand.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+          <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <p>
+    <%= b.label :name %>
+    <%= b.text_field :name %>
+  </p>
+  <p>
+    <%= b.label :description %>
+    <%= b.text_field :description %>
+  </p>
+  <p>
+    <%= b.submit %>
+  </p>
+<% end %>
