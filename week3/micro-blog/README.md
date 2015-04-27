@@ -1,4 +1,12 @@
-# Extend the blog
+# Microblog
+
+Recreate your Sintara, Rack microblogs in Ruby on Rails.
+
+## Spoilers:
+
+Read about Rails generators.
+
+# Extension
 
 Our blog turn out very successful. Now is the time to extend its functionality.
 
