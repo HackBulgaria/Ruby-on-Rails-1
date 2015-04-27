@@ -2,7 +2,7 @@
 
 Howdy!
 
-For our next adventure in the world of World-Wide Web we would like to develop an application for managing our Rails course. The next lines describe the key components of our system.
+For our next adventure in the world of World-Wide Web we would like to develop an application for managing our Rails course. The next lines describe the key components of this system.
 
 ## Lectures
 We have many lectures in our system. Every lecture is composed of a name, a text body and many tasks. These tasks are four the students to solve and could be as many as we want.
@@ -12,7 +12,7 @@ We have many lectures in our system. Every lecture is composed of a name, a text
 * GET /lectures/42 - Displays lecture 42.
 * POST /lectures - Creates a new lecture
 * DELETE /lectures/42 - Deletes lecture 42.
-* PUT/PATCH /lectures/42 - Updates a lecture 42.
+* PUT/PATCH /lectures/42 - Updates lecture 42.
 
 ## Tasks
 Every task has a name, description and many solutions.
@@ -34,6 +34,6 @@ Every task has many potential solutions sent by our students. We need a way to m
 * DELETE /lectures/42/tasks/3/solutions/13 - Deletes solution 13 for task 3 in lecture 42.
 * PUT/PATCH /lectures/42/tasks/3/solutions/13 - Updates solution 13 for task 3 in lecture 42.
 
-This time we're not building a REST service so don't forget to add some pretty web views.
+This time we're not building a REST service so don't forget to add some pretty web views for managing all these endpoints.
 
 Go on and build that thing! (:
