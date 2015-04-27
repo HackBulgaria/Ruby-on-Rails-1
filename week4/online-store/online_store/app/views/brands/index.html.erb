@@ -1,3 +1,22 @@
 <h1>Brands</h1>
+
+<table>
+  <tr>
+    <td>ID:</td>
+    <td>Name:</td>
+    <td>Description:</td>
+    <th colspan: 2></th>
+  </tr>
+  <% @brands.each do |brand| %>
+    <tr>
+      <td><%= brand.id %></td>
+      <td><%= brand.name %></td>
+      <td><%= brand.description %></td>
+      <td><%= link_to 'Show', brand_path(brand) %></td>
+      <td><%= link_to 'Edit', edit_brand_path(brand) %></td>
+    </tr>
+  <% end %>
+</table>
+
 <%= link_to 'Back to home', root_path %>
 <%= link_to 'Create a new brand', new_brand_path %>
