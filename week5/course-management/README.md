@@ -5,7 +5,7 @@ Howdy!
 For our next adventure in the world of World-Wide Web we would like to develop an application for managing our Rails course. The next lines describe the key components of this system.
 
 ## Lectures
-We have many lectures in our system. Every lecture is composed of a name, a text body and many tasks. These tasks are four the students to solve and could be as many as we want.
+We have many lectures in our system. Every lecture is composed of a name, a text body and many tasks. These tasks are for the students to solve and could be as many as we want.
 
 ### Endpoints
 * GET /lectures - Lists all lectures in the system.
@@ -29,7 +29,7 @@ Every task has a name, description and many solutions.
 * PUT/PATCH /lectures/42/tasks/3 - Updates task 3 for lecture 42.
 
 ## Solutions
-Every task has many potential solutions sent by our students. We need a way to manage them too.
+Every task has many potential solutions sent by our students. We need a way to manage them too. The solution has a text block with the solution in it.
 
 ### Endpoints
 * GET /lectures/42/tasks/3/solutions - Lists all solutions for tasks 3 in lecture 42.
