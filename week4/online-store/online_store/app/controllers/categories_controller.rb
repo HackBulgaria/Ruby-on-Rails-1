@@ -7,8 +7,14 @@ class CategoriesController < ApplicationController
     @category = Category.new
   end
 
-  def edit
+  def update
     @category = Category.find_by(params[:id])
+    if @category.update_attributes(category_params)
+      flash[:success] = 'Category updated'
+      redirect_to @category
+    else
+      render 'edit'
+    end
   end
 
   def show

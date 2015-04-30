@@ -7,8 +7,15 @@ class ProductsController < ApplicationController
     @product = Product.new
   end
 
-  def edit
+  def update
     @product = Product.find_by(params[:id])
+
+    if @product.update_attributes(product_params)
+      flash[:success] = 'Product updated'
+      redirect_to @product
+    else
+      render 'edit'
+    end
   end
 
   def show

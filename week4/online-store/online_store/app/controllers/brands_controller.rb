@@ -7,8 +7,14 @@ class BrandsController < ApplicationController
     @brand = Brand.new
   end
 
-  def edit
+  def update
     @brand = Brand.find_by(params[:id])
+    if @brand.update_attributes(brand_params)
+      flash[:success] = 'Brand updated'
+      redirect_to @brand
+    else
+      render 'edit'
+    end
   end
 
   def show
