@@ -14,6 +14,7 @@
       <td><%= brand.description %></td>
       <td><%= link_to 'Show', brand_path(brand) %></td>
       <td><%= link_to 'Edit', edit_brand_path(brand) %></td>
+      <td><%= link_to 'Delete', brand, method: :delete %></td>
     </tr>
   <% end %>
 </table>

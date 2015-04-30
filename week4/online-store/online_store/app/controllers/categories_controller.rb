@@ -29,6 +29,11 @@ class CategoriesController < ApplicationController
     end
   end
 
+  def destroy
+    Category.find(params[:id]).destroy
+    redirect_to categories_path
+  end
+
   private
 
   def category_params

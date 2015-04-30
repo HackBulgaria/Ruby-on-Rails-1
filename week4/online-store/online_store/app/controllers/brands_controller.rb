@@ -29,6 +29,11 @@ class BrandsController < ApplicationController
     end
   end
 
+  def destroy
+    Brand.find(params[:id]).destroy
+    redirect_to brands_path
+  end
+
   private
 
   def brand_params
