@@ -10,3 +10,6 @@ You obviously need a Twitter account with lots of data in the feed. You'll also 
 
 ## Restrictions
 Make sure you don't use some fancy library wrapping the APIs. We'd like you to work directly with the API provided by the service.
+
+## Extended
+In addition to the functionality above, you should add a form for posting new tweets. The content of the tweet should first be passed through Semantria and only if the sentiment of the tweet is positive it should be posted to Twitter.
